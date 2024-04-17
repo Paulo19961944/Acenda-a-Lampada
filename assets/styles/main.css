@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Archivo", sans-serif;
+}
+
+body{
+    background-color: #fafafa;
+    max-width: 100vw;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header{
+    margin-top: 64px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#lamp{
+    margin-top: 24px;
+}
+
+.liga-desliga{
+    margin-top: 32px;
+}   
+
+.btn{
+    border: none;
+    color: #e0e0e0;
+    width: 88px;
+    height: 32px;
+    cursor: pointer;
+}
+
+.btn:hover, #trocarLampada:hover{
+    transform: scale(1.03);
+    transition: 0.5s ease-in-out;
+}
+
+#ligar{
+    background-color: #358600;
+    margin-right: 24px;
+}
+
+#desligar{
+    background-color: #9B1D20;
+}
+
+#trocarLampada{
+    display: none;
+    border: none;
+    border-radius: 999px;
+    width: 160px;
+    height: 40px;
+    background-color: #358600;
+    color: #e0e0e0;
+    cursor: pointer;
+}
+
+@media screen and (max-width: 576px) {
+    h1{
+        font-size: 1.5em;
+    }   
+
+    .btn, #trocarLampada{
+        font-size: 0.75em;
+    }
+}
